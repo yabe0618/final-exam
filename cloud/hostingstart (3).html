@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv=X-UA-Compatible content="IE=edge">
+	<title>Taiwan_Man</title>
+	<script type="text/javascript"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<body style="margin:0px;">
+		<div class="cantainer-fulid" style="height:50px" ;></div>
+		<div class="container">
+			
+			<div class="row" style="height: auto;">
+				<div class="col-md-6 col-xs-12" style="margin-top:50px;margin-bottom:50px;">
+					<div style="font-size: 70px; margin-top: 20px; margin-bottom: 20px; text-align: center; color: #3F3D56;">
+						Custom Vision
+					</div>
+					<div style="font-size: 10px; margin-top: 20px; margin-bottom: 20px; text-align: center; color: #3F3D56;">
+						組員: 張筱昀1310834006  蔡育臻1310834019  張書碩1310834030
+					</div>
+					<div class="row" style="color: #3F3D56;">
+						<div class="col-md-3">
+							<label class=" col-form-label">請輸入圖片網址</label>
+						</div>
+						<div class="col-md-6">
+							<div class="" style="border-color:#3F3D56;">
+								<input class="form-control" id="url" name="url" type="text">
+							</div>
+						</div>
+							<div class="col-md-3">
+								<button id="submit" onclick="submit()" class="btn btn-outline-dark">辨識圖片</button>
+						</div>	
+					</div>
+				</div>
+				<div class="col-md-6 col-xs-12" style="margin-top:50px">
+				
+					<img src="illustration.png" style="width:80%" class="img-fluid" alt="Responsive image">
+				
+				</div>
+			</div>
+		</div>
+		<div class="cantainer-fulid fixed-bottom" style="height:50px" ;></div>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	</body>
+	<script>
+		function submit(){
+			var  url =document.getElementById("url").value;
+			window.location.href = "result.html?url="+url;
+		}
+	</script>
+</html>
